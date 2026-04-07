@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisan Oven | Craft Bakery</title>
+    <style>
+        :root {
+            --primary: #6d4c41; /* Cocoa */
+            --accent: #d4a373;  /* Wheat */
+            --bg: #fdfaf5;      /* Cream */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg); color: #333; line-height: 1.6; }
+
+        /* Navigation */
+        nav { background: white; padding: 20px 0; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo { font-size: 1.8rem; font-weight: bold; color: var(--primary); text-decoration: none; }
+
+        /* Hero Section - Using Local Image */
+        .hero {
+    height: 60vh; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    /* Background Image Settings */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('bakery-hero.jpg'); /* REPLACE with your filename */
+    background-size: cover;      /* Scales image to cover the whole area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Use 'fixed' for a parallax effect */
+    }
+
+    .hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Makes text pop against image */
+    margin-bottom: 10px;
+    }
+
+    .hero p {
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+
+
+        /* Centered Menu Grid */
+        .container { max-width: 1100px; margin: 0 auto; padding: 50px 20px; text-align: center; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-body { padding: 20px; }
+        .price { color: var(--accent); font-weight: bold; }
+
+        /* Contact Section */
+        .contact { background: #faedcd; padding: 50px 20px; margin-top: 50px; border-radius: 20px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: center; }
+        .contact-info { flex: 1; min-width: 300px; text-align: left; }
+        .map-frame { flex: 1; min-width: 300px; height: 300px; border-radius: 15px; overflow: hidden; }
+
+        footer { background: var(--primary); color: white; padding: 30px; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <nav><a href="#" class="logo">Baked with Tradition</a></nav>
+
+    <header class="hero">
+        <h1>THE ARTISAN OVEN</h1>
+        <p>Your local source for artisanal bread and pastries.</p>
+    </header>
+
+    <main class="container">
+        <h2>Our Daily Menu</h2>
+        <div class="menu-grid">
+            <!-- 12 Items - Update src with your actual local filenames -->
+            <div class="card"><img src="sd.jpg" alt="Sourdough"><div class="card-body"><h3>Sourdough</h3><p class="price">Rs. 560</p></div></div>
+            <div class="card"><img src="cro.jpg" alt="Croissant"><div class="card-body"><h3>Croissant</h3><p class="price">Rs. 240</p></div></div>
+            <div class="card"><img src="cp.jpg"><div class="card-content"><h3>Choco Pastry</h3><p class="price">Rs. 320</p></div></div>
+            <div class="card"><img src="bag.jpg"><div class="card-content"><h3>Baguette</h3><p class="price">Rs. 320</p></div></div>
+            <div class="card"><img src="fd.jpg"><div class="card-content"><h3>Fruit Danish</h3><p class="price">Rs. 320</p></div></div>
+            <div class="card"><img src="cg.jpg"><div class="card-content"><h3>Ganache Cake</h3><p class="price">Rs. 560</p></div></div>
+            <div class="card"><img src="mbt.jpg"><div class="card-content"><h3>Berry Tart</h3><p class="price">Rs. 480</p></div></div>
+            <div class="card"><img src="ssc.jpg"><div class="card-content"><h3>Sea Salt Cookie</h3><p class="price">Rs. 250</p></div></div>
+            <div class="card"><img src="mac.jpg"><div class="card-content"><h3>Macarons</h3><p class="price">Rs. 960</p></div></div>
+            <div class="card"><img src="cr.jpg"><div class="card-content"><h3>Cinnamon Roll</h3><p class="price">Rs. 400</p></div></div>
+            <div class="card"><img src="cia.jpg"><div class="card-content"><h3>Ciabatta</h3><p class="price">Rs. 440</p></div></div>
+            <div class="card"><img src="rb.jpg"><div class="card-content"><h3>Dark Rye</h3><p class="price">Rs.560</p></div></div>
+        </div>
+
+        <div class="contact">
+            <div class="contact-info">
+                <h3>Visit Us</h3>
+                <p>📍 123 Bakery Lane, Paris, FR 75001</p>
+                <p>📞 +33 1 23 45 67 89</p>
+                <p>⏰ Open Daily: 6am - 6pm</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>&copy; 2024 The Artisan Oven. All rights reserved.</footer>
+</body>
+</html>
